@@ -27,7 +27,7 @@ export default function Articles() {
         <div>
             {
                 articles.length === 0 ? (
-                    <p>No Articles found !</p>
+                    <p className='noArticle'>No Articles found !</p>
                 ) : (
                     articles.map(({ id, Title, Description, imageUrl, CreatedAt }) => (
                         <div className="border mt-3 p-3 bg-light" key={id}>

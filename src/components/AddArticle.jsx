@@ -56,7 +56,7 @@ export default function AddArticle() {
                             CreatedAt: Timestamp.now().toDate(),
                         })
                             .then(() => {
-                                toast("Article added succesfully", { type: 'success', autoClose: 1000 });
+                                toast("Article added succesfully", { type: 'success', autoClose: 500 });
                                 setProgress(0);
                             })
                             .catch(err=>{
@@ -95,7 +95,7 @@ export default function AddArticle() {
             />
             {progress === 0 ? null : (
                 <div className="progress">
-                <div className="progress-bar progress-bar-striped mt-2" style={{ width: `${progress}%` }}>
+                <div className="progress-bar progress-bar-striped mt-2" style={{ width: `${progress}%`}}>
                     {`uploading image ${progress}%`}
                 </div>
             </div>

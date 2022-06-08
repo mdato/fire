@@ -9,7 +9,7 @@ export default function DeleteArticle({id, imageUrl}) {
     const handleDelete = async()=> {
         try {
             await deleteDoc(doc(db, "Articles", id))
-            toast("Article deleted succesfully", {type: "success", autoClose: 1000})
+            toast("Article deleted succesfully", {type: "success", autoClose: 500})
             const storageRef = ref(storage, imageUrl)
             await deleteObject(storageRef)
         } catch (error) {
