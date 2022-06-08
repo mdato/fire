@@ -1,0 +1,39 @@
+.derecha {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  flex-direction: row !important;
+}
+
+.texto_foto {
+  margin-left: 100px;
+}
+
+.fecha{
+    font-size: 10px !important;
+}
+h4{
+    font-size: 13px !important;
+}
+
+@media only screen and (max-width: 576px) {
+  .row .derecha {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    flex-direction: row !important;
+    margin-top: 300px !important;
+  }
+  .texto_foto {
+    margin-left: 0px;
+  }
+
+.fecha{
+    font-size: 10px !important;
+}
+h4{
+    font-size: 13px !important;
+}
+
+.agrego{
+    width: 88vw !important;
+}
+}

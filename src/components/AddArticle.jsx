@@ -4,7 +4,6 @@ import React, { useState } from 'react'
 import { toast } from 'react-toastify';
 import { storage, db } from './../firebaseConfig';
 
-
 export default function AddArticle() {
     const [formData, setFormData] = useState({
         Title: "",
@@ -57,7 +56,7 @@ export default function AddArticle() {
                             CreatedAt: Timestamp.now().toDate(),
                         })
                             .then(() => {
-                                toast("Article added succesfully", { type: 'success' });
+                                toast("Article added succesfully", { type: 'success', autoClose: 1000 });
                                 setProgress(0);
                             })
                             .catch(err=>{
