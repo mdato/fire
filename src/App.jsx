@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Articles from './components/Articles';
 import AddArticle from './components/AddArticle';
-import './App.css';
 
 const App = () => {
     return (

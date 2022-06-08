@@ -95,13 +95,13 @@ export default function AddArticle() {
             />
             {progress === 0 ? null : (
                 <div className="progress">
-                <div className="progress-bar progress-bar-striped mt-2" style={{ width: `${progress}%`}}>
+                <div className="progress-bar mt-2" style={{ width: `${progress}%`, height: '100px'}}>
                     {`uploading image ${progress}%`}
                 </div>
             </div>
             )}
             
-            <button className="form-control btn-primary mt-2" onClick={handlePublish}>Publish</button>
+            <button className="form-control btn-primary mt-4" onClick={handlePublish}>Publish</button>
         </div>
 
     )
